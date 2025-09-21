@@ -1,0 +1,158 @@
+:root {
+  --color_primario: #d9a1e8;
+  --color_blanco: #fff;
+  --altura_header: 80px;
+  --padding_left_right: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5e0c9;
+}
+
+
+.header {
+  background-color: var(--color_primario);
+  color: var(--color_blanco);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--altura_header);
+  padding: 0 var(--padding_left_right);
+}
+
+.logo {
+  margin: 0;
+}
+
+
+.ul_links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.li_links .link {
+  background-color: skyblue;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.li_links .link:hover {
+  background-color: #4db8ff;
+  color: white;
+}
+
+
+section {
+  display: none;
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+section.activo {
+  display: block;
+}
+
+.Portfolio{
+    display: none;
+}
+
+img{
+
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 10px solid wheat;
+
+}
+.contenedorFotoPortfolio{
+   display: flex;
+  justify-content: center; 
+  align-items: center;     
+  margin: 20px 0;
+}
+
+.parrafoSobreMi{
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin{
+transition: .2s ease;
+
+}
+
+.linkedin:hover{
+  transform: scale(1.1);
+
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.campo input,
+.campo textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  border: 1px solid #8527c3; /* tu color primario */
+  box-shadow: 0 0 8px rgba(133, 39, 195, 0.3);
+}
+
+.campo textarea {
+  resize: none;
+  height: 120px;
+}
+
+.boton {
+  text-align: center;
+}
+
+.boton button {
+  background: #9f6bc4;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.boton button:hover {
+  background: #d04473;
+  transform: scale(1.05);
+}
